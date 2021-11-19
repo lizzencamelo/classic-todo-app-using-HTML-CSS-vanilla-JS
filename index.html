@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Todo app</title>
+
+    <!--    Bootstrap CSS File     -->
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">-->
+
+    <!--  CSS Stylesheets   -->
+    <link rel="stylesheet" href="styles/style.css" type="text/css" />
+    <link rel="stylesheet" href="styles/display.css" type="text/css" />
+
+</head>
+<body>
+    <main>
+        <div class="to-do-background-container"></div>
+        <div class="to-do-component-container">
+            <h1 class="main-title">Todo</h1>
+
+            <!-- Enter to-do item -->
+            <div class="to-do">
+                <label class="to-do-main">
+                    <input type="checkbox" id="to-do-check">
+                    <span class="to-do-check"></span>
+                </label>
+                <input type="text" placeholder="Create a new todo..." class="to-do-input-field" id="to-do-input-field">
+            </div>
+
+            <!-- Add dynamic number -->
+            <nav>
+                <ul class="nav-item-list">
+                    <li class="nav-item">
+                        items left
+                    </li>
+                    <li class="nav-item">
+                        <ul class="nav-item-list">
+                            <li class="nav-item">
+                                All
+                            </li>
+                            <li class="nav-item">
+                                Active
+                            </li>
+                            <li class="nav-item">
+                                Completed
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        Clear Completed
+                    </li>
+                </ul>
+
+            </nav>
+            <span class="small-text">Drag and drop to reorder list</span>
+        </div>
+    </main>
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Lizzen Camelo</a>.
+    </div>
+
+    <!-- JQuery and Bootstrap Javascript file -->
+    <!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>-->
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>-->
+    <script src="scripts/script.js"></script>
+
+</body>
+</html>
