@@ -4,16 +4,16 @@ This is a solution to the [Todo app challenge on Frontend Mentor](https://www.fr
 
 ## Table of contents
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
+&nbsp;&nbsp; ◾ [Overview](#overview)  
+&nbsp;&nbsp; ◾ [The challenge](#the-challenge)  
+&nbsp;&nbsp; ◾ [Screenshot](#screenshot)  
+&nbsp;&nbsp; ◾ [Links](#links)  
+&nbsp;&nbsp; ◾ [My process](#my-process)  
+&nbsp;&nbsp;&nbsp;&nbsp; ▪️ [Built with](#built-with)  
+&nbsp;&nbsp;&nbsp;&nbsp; ▪️ [What I learned](#what-i-learned)  
+&nbsp;&nbsp;&nbsp;&nbsp; ▪️ [Continued development](#continued-development)  
+&nbsp;&nbsp;&nbsp;&nbsp; ▪️ [Useful resources](#useful-resources)  
+&nbsp;&nbsp; ◾ [Author](#author)  
 
 
 ## Overview
@@ -87,5 +87,5 @@ Use this section to outline areas that you want to continue focusing on in futur
 - [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 ## Author
-- Frontend Mentor - [@lizzencamelo](https://www.frontendmentor.io/profile/lizzencamelo)
+⭐ [@lizzencamelo](https://www.frontendmentor.io/profile/lizzencamelo)
 
