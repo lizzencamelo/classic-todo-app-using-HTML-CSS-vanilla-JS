@@ -56,12 +56,16 @@ Add a screenshot of your solution. The easiest way to do this is to use Firefox 
 
 ### What I learned
 
-Using the prefers-color-scheme media query with JavaScript.
-
+(i) **prefers-color-scheme:** used to detect if the user has requested a light or dark color theme.
 ```js
 const useDark = window.matchMedia("(prefers-color-scheme: dark)");
 ```
-
+(ii) **general sibling combinator:** the ~ separates two selectors and matches all iterations of the second element, that follow the first element and are children of the same parent element.
+```css
+  img ~ p {
+  color: lilac;
+  }
+```
 
 ### Continued development
 
