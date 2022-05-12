@@ -1,21 +1,5 @@
 # Todo App
-A classic to do app to list your tasks.
-
-## Table of contents
-
-&nbsp;&nbsp; ◾ [Overview](#overview)  
-&nbsp;&nbsp; ◾ [The challenge](#the-challenge)  
-&nbsp;&nbsp; ◾ [Screenshot](#screenshot)  
-&nbsp;&nbsp; ◾ [Links](#links)  
-&nbsp;&nbsp; ◾ [My process](#my-process)  
-&nbsp;&nbsp;&nbsp;&nbsp; ▪️ [Built with](#built-with)  
-&nbsp;&nbsp;&nbsp;&nbsp; ▪️ [What I learned](#what-i-learned)  
-&nbsp;&nbsp;&nbsp;&nbsp; ▪️ [Continued development](#continued-development)  
-&nbsp;&nbsp;&nbsp;&nbsp; ▪️ [Useful resources](#useful-resources)  
-&nbsp;&nbsp; ◾ [Author](#author)  
-
-
-## Overview
+A classic To Do app to list your daily tasks.
 
 ### The challenge
 
@@ -45,14 +29,15 @@ Add a screenshot of your solution. The easiest way to do this is to use Firefox 
 
 ## My process
 
+    Analyse web app design.
+    Build web app.
+    Test app.
+
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
+- Vanilla JavaScript
 
 ### What I learned
 
@@ -67,15 +52,10 @@ const useDark = window.matchMedia("(prefers-color-scheme: dark)");
   }
 ```
 
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-
 ### Useful resources
 
 - [The prefers-color-scheme](https://www.ditdot.hr/en/dark-mode-website-tutorial) - The prefers-colors-scheme using Javascript gets applied depending on the user's color scheme preference in the OS.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Drag & Drop](https://baseweb.design/blog/drag-and-drop-list/) - What goes into building a drag and drop component?
 
 ## Author | [@lizzencamelo](https://www.frontendmentor.io/profile/lizzencamelo)
 
