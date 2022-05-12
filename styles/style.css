@@ -1,30 +1,6 @@
 /*      GOOGLE FONTS        */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
 
-/*      CSS VARIABLES       */
-:root {
-    --contrast-color: hsl(220, 98%, 61%);
-    --bg-color: hsl(0, 0%, 98%);
-    --bg-color-second: #ffffff;
-    --line-color: hsl(236, 33%, 92%);
-    --text-color: hsl(235, 19%, 35%);
-    --text-color-light: hsl(236, 9%, 61%);
-    --hover: hsl(236, 9%, 61%);
-    --shadow: hsl(236, 33%, 92%);
-}
-
-/*	DARK THEME	*/
-.dark {
-    /*transition, animation*/
-    --bg-color: hsl(235, 21%, 11%);
-    --bg-color-second: hsl(235, 24%, 19%);
-    --line-color: hsl(237, 14%, 26%);
-    --text-color: hsl(234, 39%, 85%);
-    --text-color-light: hsl(233, 14%, 35%);
-    --hover: hsl(236, 33%, 92%);
-    --shadow: black;
-}
-
 /*      BASE        */
 * {
     margin: 0;
@@ -37,22 +13,12 @@
 body {
     position: relative;
     font-family: 'Josefin Sans', sans-serif;
+    background-color: var(--bg-color);
 }
 
-/*      BACKGROUND IMAGE        */
-.to-do-background-container {
-    background-image: url('../images/bg-mobile-light.jpg');
-    background-size: cover;
-    height: 230px;
-}
-
-.dark .to-do-background-container {
-    background-image: url('../images/bg-mobile-dark.jpg');
-}
-
+/*      TO DO CONTAINER        */
 .to-do-container {
     height: calc(100vh - 270px);
-    background-color: var(--bg-color);
 }
 
 .to-do-component-container {
@@ -64,144 +30,290 @@ body {
     height: 80vh;
     min-height: 80vh;
     width: 90%;
-    margin-top: 4rem;
+    margin-top: 2.5rem;
 }
 
 /*      MAIN TITLE      */
-.title-slot {
+.title-wrap {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 2.2rem;
+    margin-bottom: 1rem;
 }
 
 .main-title {
     text-transform: uppercase;
     color: #ffffff;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1.5rem;
     letter-spacing: 0.8rem;
 }
 
-.theme{
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
+.toggle-switch input[type=checkbox] {
+    display: none;
 }
 
 /*      TO-DO-FIELD     */
 .to-do {
     background-color: var(--bg-color-second);
-    padding: 1rem 1.2rem;
+    padding: 0 26px;
+    margin: 0 0 1.2rem;
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
     border-bottom: 1px solid var(--line-color);
-}
-
-.to-do-list {
-    margin-top: 1.2rem;
-}
-
-input[type=checkbox] {
-    visibility: hidden;
-}
-
-.to-do-main {
     position: relative;
-    cursor: pointer;
-    min-width: 18px;
-    margin-right: 1.5rem;
 }
 
-.to-do-check {
-    position: absolute;
-    top: 50%;
-    bottom: 50%;
-    transform: translateY(-50%);
-    left: 0;
-    width: 23px;
-    height: 23px;
-    border: var(--line-color) 1px solid;
+.to-do span {
+    display: block;
+    width: 25px;
+    height: 25px;
+    border: 1px solid var(--line-color);
     border-radius: 50%;
+    position: absolute;
+    left: 26px;
+    top: 12px;
+    cursor: pointer;
+    transition: transform 200ms ease;
+}
+
+.to-do span:hover{
+    transform: rotate(360deg);
+  }
+
+
+.to-do span:hover {
+    background: center url('../images/icon-check.svg') no-repeat, linear-gradient(135deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
 }
 
 .to-do-input-field {
-    font-size: 18px;
-    border: none;
-    width: 80%;
-    background-color: var(--bg-color-second);
-}
-
-.to-do-input-field:focus{
-    outline: none;
-    color:var(--text-color);
-}
-
-input[placeholder] {
-    font-family: 'Josefin Sans', sans-serif;
+    background-color: transparent;
     color: var(--text-color);
-}
-
-/*  NAV LIST  */
-.nav-item-list, .task-item-list {
+    margin: 10px 35px;
+    font-size: 0.8rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 400;
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 90%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
-.nav-item-list {
-    box-shadow: var(--shadow) 0px 5px 10px;
-    background-color: var(--bg-color-second);
-    padding: 1rem 1.2rem;
+.to-do-input-field:focus {
+    color:var(--text-color);
 }
 
-.nav-item, .nav-item a {
-    font-size: 12px;
-    text-decoration: none;
+.to-dos {
+    box-shadow: 0 42px 30px -9px var(--shadow);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    background-color: var(--bg-color-second);
+    padding: 0 10px 0 25px;
+    height: 55px;
+    border-bottom: 1px solid var(--line-color);
+    position: relative;
+}
+
+ul li.hidden {
+    display: none;
+}
+
+ul li input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+}
+
+ul li label {
+    position: relative;
+    cursor: pointer;
+    padding: 2px 0 0 48px;
+}
+
+.checkmark {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+}
+
+ul li input[type="checkbox"] ~ .checkmark {
+    border: 1px solid var(--line-color);
+    border-radius: 50px;
+}
+
+ul li input[type="checkbox"] ~ .checkmark:hover {
+    border: 0;
+    padding: 1px;
+    background: linear-gradient(135deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
+ul li input[type="checkbox"] ~ .checkmark:hover::before {
+    content: '';
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background: var(--bg-color-second);
+    display: block;
+}
+
+
+ul li input[type="checkbox"]:checked ~ .checkmark {
+    background: center url(../images/icon-check.svg) no-repeat, linear-gradient(135deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
+.to-do-text {
+    background-color: transparent;
+    color: var(--text-color);
+    width: 380px;
+    position: absolute;
+    top: 25px;
+    left: 40px;
+    overflow-wrap: break-word;
+    font-size: 0.8rem;
+}
+
+ul li input[type="checkbox"]:checked ~ .to-do-text {
+    text-decoration: line-through;
     color: var(--text-color-light);
 }
 
-.nav-item a:hover{
+.delete {
+    background: url(../images/icon-cross.svg) no-repeat;
+    width: 18px;
+    height: 18px;
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+}
+
+ul li:hover .delete {
+    display: block;
+}
+
+
+/*  NAV LIST  */
+.nav-items {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 10px 20px -20px var(--shadow);
+    background-color: var(--bg-color-second);
+    color: var(--text-color-light);
+    padding: 20px 20px 27px;
+    letter-spacing: .5px;
+    border-radius: 0 0 5px 5px;
+    letter-spacing: .5px;
+    height: 50px;
+}
+
+.filter {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.nav-item, .filter span {
+    flex-grow: 1;
+    font-size: 12px;
+}
+
+.filter input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.filter label {
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.filter label:hover, .clear-completed:hover {
     color: var(--text-color);
 }
 
-.task-item {
-    padding: 0 1rem;
+.filter input[type="radio"]:checked ~ span {
+    color: var(--contrast-color);
 }
 
-.task-item a {
+.clear-completed {
     color: var(--text-color-light);
-    font-weight: 700;
+    text-align: right;
+    cursor: pointer;
 }
 
-.task-item a:hover {
-    color: var(--hover);
+.nav-item.desktop {
+    display: none;
+}
+
+.nav-items.mobile {
+    margin-top: 1.2rem;
 }
 
 .small-text {
+    font-size: 12px;
     margin: 3rem 0;
     text-align: center;
     color: var(--text-color-light);
 }
 
-.small-text p {
-    font-size: 12px;
-}
+
+/*  DRAGGABLE */
+.draggable {
+    transition: all 250ms ease;
+  }
+
+.over {
+    transform: scale(1.1, 1.1);
+  }
 
 /* MEDIA QUERIES */
 @media only screen and (min-width: 200px) {
     .to-do-component-container {
         width: 80%;
-    }
+}
 }
 
 @media only screen and (min-width: 600px) {
     .to-do-component-container {
         width: 60%;
+        margin-top: 4rem;
     }
-    .to-do-background-container {
-        background-image: url('../images/bg-desktop-light.jpg');
-        height: 270px;
+    .main-title {
+        font-size: 2rem;
     }
-    .dark .to-do-background-container {
-        background-image: url('../images/bg-desktop-dark.jpg');
+    .to-do-input-field, .to-do-text {
+        font-size: 0.9rem;
+    }
+    ul li {
+        height: 65px;
+    }
+    .nav-items.mobile {
+        display: none;
+    }
+    .nav-item.desktop {
+        display: flex;
+    }
+    .title-wrap {
+        margin-bottom: 2rem;
     }
 }
 
@@ -209,18 +321,4 @@ input[placeholder] {
     .to-do-component-container {
         width: 38%;
     }
-}
-
-.attribution {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom:0;
-    font-size: 11px;
-    text-align: center;
-
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
 }
