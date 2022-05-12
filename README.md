@@ -1,4 +1,4 @@
-# Todo App
+# Todo App 
 A classic To Do app to list your daily tasks.
 
 ### The challenge
@@ -26,9 +26,10 @@ Users should be able to:
 
 ## My process
 
-    Analyse web app design.
-    Build web app.
-    Test app.
+    Analyse app design.
+    Build.
+    Test accessibility.
+    Deploy.
 
 ### Built with
 
