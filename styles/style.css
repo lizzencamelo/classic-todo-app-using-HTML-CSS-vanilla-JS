@@ -55,6 +55,8 @@ body {
 /*      TO-DO-FIELD     */
 .to-do {
     background-color: var(--bg-color-second);
+    display: flex;
+    align-items: center;
     padding: 0 26px;
     margin: 0 0 1.2rem;
     height: 50px;
@@ -97,8 +99,6 @@ body {
     outline: none;
     height: 50px;
     width: 90%;
-    display: flex;
-    align-items: center;
 }
 
 .to-do-input-field:focus {
@@ -306,8 +306,8 @@ ul li:hover .delete {
     ul li, .to-do {
         height: 65px;
     }
-    .to-do span{
-        top:21px;
+    .to-do span {
+        top: 21px;
     }
     .nav-items.mobile {
         display: none;
