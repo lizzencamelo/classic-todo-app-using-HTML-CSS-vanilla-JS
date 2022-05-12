@@ -303,8 +303,11 @@ ul li:hover .delete {
     .to-do-input-field, .to-do-text {
         font-size: 0.9rem;
     }
-    ul li {
+    ul li, .to-do {
         height: 65px;
+    }
+    .to-do span{
+        top:21px;
     }
     .nav-items.mobile {
         display: none;
