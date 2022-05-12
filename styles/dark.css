@@ -1,0 +1,27 @@
+/*	DARK THEME	*/
+.dark {
+    --bg-color: hsl(235, 21%, 11%);
+    --bg-color-second: hsl(235, 24%, 19%);
+    --line-color: hsl(237, 14%, 26%);
+    --text-color: hsl(234, 39%, 85%);
+    --text-color-light: hsl(233, 14%, 35%);
+    --hover: hsl(236, 33%, 92%);
+    --shadow: black;
+}
+
+/*      BACKGROUND IMAGE        */
+.dark .to-do-background-container {
+    background-image: url('../images/bg-mobile-dark.jpg');
+}
+
+/*      TOGGLE BUTTON          */
+.toggle-switch #toggle:checked + label::before {
+    background: url(../images/icon-sun.svg);
+}
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 600px) {
+    .dark .to-do-background-container {
+        background-image: url('../images/bg-desktop-dark.jpg');
+    }
+}
