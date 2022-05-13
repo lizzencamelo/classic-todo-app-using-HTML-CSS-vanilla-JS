@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [View on Frontendmentor](https://www.frontendmentor.io/solutions/classictodoappusinghtmlcssvanillajs-SyJushcI5)
 - Live Site URL: [Todo-App](https://lizzencamelo.github.io/Classic-Todo-App-using-HTML-CSS-JS/)
 
 ## My process
