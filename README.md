@@ -22,7 +22,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [View on Frontendmentor](https://www.frontendmentor.io/solutions/classictodoappusinghtmlcssvanillajs-SyJushcI5)
-- Live Site URL: [Todo-App](https://lizzencamelo.github.io/Classic-Todo-App-using-HTML-CSS-JS/)
+- Live Site URL: [Todo-App](https://lizzencamelo.github.io/classic-todo-app-using-HTML-CSS-vanilla-JS/)
 
 ## My process
 
