@@ -17,7 +17,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Final-desktop-design](design/final-product.png)
+![final-product](https://user-images.githubusercontent.com/90834791/193410067-34ee6351-1ef0-4520-86d2-6b99f19bcbf4.png)
+
 
 ### Links
 
