@@ -1,7 +1,7 @@
 # Todo App 
 A classic To Do app to list your daily tasks.
 
-### The challenge
+### Objective
 
 Users should be able to:
 
